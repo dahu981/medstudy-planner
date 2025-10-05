@@ -16,15 +16,16 @@ export default defineConfig({
   theme_color: '#b5967d',
   background_color: '#ffffff',
   display: 'standalone',
-  start_url: '/medstudy-planner/', 
+  start_url: './',  // ← Ändern von '/medstudy-planner/' zu './'
+  scope: './',      // ← NEU hinzufügen!
   icons: [
     {
-      src: '/medstudy-planner/icon-192.png',  // ← BASE-Pfad hinzugefügt!
+      src: '/medstudy-planner/icon-192.png',
       sizes: '192x192',
       type: 'image/png'
     },
     {
-      src: '/medstudy-planner/icon-512.png',  // ← BASE-Pfad hinzugefügt!
+      src: '/medstudy-planner/icon-512.png',
       sizes: '512x512',
       type: 'image/png'
     }
