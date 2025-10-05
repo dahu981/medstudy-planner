@@ -9,15 +9,15 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
-      manifest: {
+manifest: {
   name: 'MedStudy Planner',
   short_name: 'MedPlanner',
   description: 'Studienplaner für Medizinstudenten',
   theme_color: '#b5967d',
   background_color: '#ffffff',
   display: 'standalone',
-  start_url: './',  // ← Ändern von '/medstudy-planner/' zu './'
-  scope: './',      // ← NEU hinzufügen!
+  start_url: '/medstudy-planner/index.html',  // ← Volle URL mit index.html
+  scope: '/medstudy-planner/',
   icons: [
     {
       src: '/medstudy-planner/icon-192.png',
