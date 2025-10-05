@@ -1,5 +1,5 @@
 import type { Event } from '../types';
-import { createLocalDateString, parseLocalDateString, isToday, isSameDay } from '../utils/dateUtils';
+import { createLocalDateString, isToday, isSameDay } from '../utils/dateUtils';
 
 interface CalendarProps {
   currentDate: Date;

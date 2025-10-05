@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { Event, Exam, TabType } from './types';
-import { loadEvents, saveEvents, loadExams, saveExams, exportData } from './utils/storage';
+import { loadEvents, saveEvents, loadExams, saveExams } from './utils/storage';
 import { StatCard } from './components/StatCard';
 import { EventCard } from './components/EventCard';
 import { ExamCard } from './components/ExamCard';
@@ -75,10 +75,6 @@ function App() {
       saveExams(exams);
     }
   }, [exams]);
-
-  const handleExport = () => {
-    exportData(events, exams);
-  };
 
   const deleteEvent = (id: number | string) => {
     if (confirm('Termin wirklich löschen?')) {
